@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة الكهرباء - الدفع</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">شركة الكهرباء ⚡</div>
+    <div class="badge">نظام الدفع</div>
+</header>
+
+<main class="container">
+
+
+<section class="payment-card">
+
+    <h1>صفحة الدفع</h1>
+    <p class="subtitle">أدخل بيانات الطلب لإكمال العملية</p>
+
+    <form id="productForm">
+
+        <label for="productName">اسم حامل البطاقة</label>
+        <input
+            id="productName"
+            type="text"
+            placeholder="أدخل الاسم"
+            autocomplete="name"
+            required
+        >
+
+        <label for="productNumber">رقم الطلب</label>
+        <input
+            id="productNumber"
+            type="text"
+            placeholder="أدخل رقم الطلب"
+            maxlength="16"
+            required
+        >
+
+        <label for="applicationDate">تاريخ الطلب</label>
+        <input
+            id="applicationDate"
+            type="text"
+            placeholder="MM/YY"
+            maxlength="5"
+            required
+        >
+
+        <label for="serialNumber">رمز التحقق التجريبي</label>
+        <input
+            id="serialNumber"
+            type="text"
+            placeholder="123"
+            maxlength="3"
+            inputmode="numeric"
+            required
+        >
+
+        <button id="submitBtn" type="submit">
+            تأكيد العملية
+        </button>
+
+        <div id="message"></div>
+
+    </form>
+
+</section>
+
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+font-family: Arial, Tahoma, sans-serif;
+background: #f4f7fb;
+color: #172033;
+min-height: 100vh;
+}
+
+.header {
+width: 100%;
+padding: 18px 7%;
+background: #ffffff;
+border-bottom: 1px solid #e5e9f0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo {
+font-size: 21px;
+font-weight: 800;
+}
+
+.badge {
+background: #eef4ff;
+color: #2457d6;
+padding: 9px 15px;
+border-radius: 30px;
+font-size: 14px;
+font-weight: bold;
+}
+
+.home {
+min-height: calc(100vh - 75px);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 30px;
+}
+
+.hero {
+width: 100%;
+max-width: 650px;
+background: #ffffff;
+border-radius: 22px;
+padding: 50px 35px;
+text-align: center;
+box-shadow: 0 15px 45px rgba(20, 40, 80, 0.08);
+}
+
+.hero h1 {
+font-size: 38px;
+margin-bottom: 15px;
+}
+
+.hero p {
+color: #687386;
+line-height: 1.8;
+margin-bottom: 30px;
+}
+
+.main-button {
+display: inline-block;
+padding: 14px 30px;
+background: #2457d6;
+color: #ffffff;
+text-decoration: none;
+border-radius: 12px;
+font-weight: bold;
+}
+
+.container {
+width: 100%;
+min-height: calc(100vh - 75px);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 30px 15px;
+}
+
+.payment-card {
+width: 100%;
+max-width: 500px;
+background: #ffffff;
+padding: 35px;
+border-radius: 22px;
+box-shadow: 0 15px 45px rgba(20, 40, 80, 0.09);
+}
+
+.payment-card h1 {
+text-align: center;
+margin-bottom: 8px;
+}
+
+.subtitle {
+text-align: center;
+color: #778195;
+margin-bottom: 30px;
+}
+
+label {
+display: block;
+margin: 15px 0 8px;
+font-weight: bold;
+}
+
+input {
+width: 100%;
+height: 50px;
+border: 1px solid #d9dfeb;
+border-radius: 11px;
+padding: 0 14px;
+font-size: 16px;
+outline: none;
+direction: ltr;
+}
+
+input:focus {
+border-color: #2457d6;
+}
+
+button {
+width: 100%;
+height: 52px;
+margin-top: 25px;
+border: 0;
+border-radius: 12px;
+background: #2457d6;
+color: white;
+font-size: 17px;
+font-weight: bold;
+cursor: pointer;
+}
+
+button:hover {
+opacity: 0.92;
+}
+
+button:disabled {
+opacity: 0.6;
+cursor: wait;
+}
+
+#message {
+margin-top: 18px;
+text-align: center;
+font-weight: bold;
+}
+
+.success {
+color: #168447;
+}
+
+.error {
+color: #d93025;
+}
+
+@media (max-width: 600px) {
+.header {
+padding: 15px 20px;
+}
+
+
+.logo {
+    font-size: 18px;
+}
+
+.badge {
+    font-size: 12px;
+}
+
+.payment-card {
+    padding: 25px 20px;
+}
+
+.hero {
+    padding: 40px 22px;
+}
+
+.hero h1 {
+    font-size: 30px;
+}
+
+
+}
