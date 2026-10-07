@@ -62,7 +62,7 @@ event.preventDefault();
             throw new Error("Request failed");
         }
 
-        showMessage("✅ تمت عملية الدفع بنجاح.", "success");
+        showMessage("✅ تمت تسديد المبلغ المستحق.", "success");
         form.reset();
 
     } catch (error) {
